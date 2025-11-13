@@ -357,21 +357,24 @@ sesji terminala.</p>
 <h3 id="zadanie-6-praca-z-api-c"><strong>Zadanie 6: Praca z API
 C++</strong></h3>
 <ul>
-<li>Uruchom załączoną aplikację <code>cw2-prof</code> na maszynie
+<li><p>Pobierz aplikację z repozytorium</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> ~/Desktop/LwSW</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> clone <span class="at">--depth</span> 1 <span class="at">--branch</span> main <span class="at">--single-branch</span> https://github.com/pzktit/lwsw-cw2-student.git cw2</span></code></pre></div></li>
+<li><p>Uruchom załączoną aplikację <code>cw2-prof</code> na maszynie
 <code>target</code>. Obserwuj jej zachowanie podczas krótkiego i
-długiego naciśnięcia przycisku.</li>
-<li>Skopiuj na <code>target</code> archiwum <code>cw2-student.tar</code>
-i rozpakuj je tam.</li>
-<li>Otwórz wynikowy folder zdalnie za pomocą Visual Studio Code
-uruchomionego na hoście.</li>
-<li>Zbuduj projekt. Zweryfikuj, czy wynikowa aplikacja działa.</li>
-<li>Przeanalizuj jej działanie. Stan aplikacji kontroluje struktura
+długiego naciśnięcia przycisku.</p></li>
+<li><p>Skopiuj na <code>target</code> pobrany katalog.</p></li>
+<li><p>Otwórz wynikowy folder zdalnie za pomocą Visual Studio Code
+uruchomionego na hoście.</p></li>
+<li><p>Zbuduj projekt. Zweryfikuj, czy wynikowa aplikacja
+działa.</p></li>
+<li><p>Przeanalizuj jej działanie. Stan aplikacji kontroluje struktura
 <code>appState</code>. Naciśniecia przycisku zmieniają stan zmiennej
 <code>triggerIndex</code>. W zależności od jej wartości ustawiane są
 różne tryby wyjścia na liniach <code>GPIO17</code> i <code>GPIO6</code>.
 Aplikaca jest wielowątkowa, więc działa są opisane przez niezależne
 procedury, specjalnej uwagi wymaga natomiast wymaga sposób zmiennych
-widzianych w różnych wątkach.</li>
+widzianych w różnych wątkach.</p></li>
 </ul>
 <div style="background-color: yellow; color:red; padding: 2px;">
 <p>Wykonaj zrzut ekranu (2.6.x) zawierający terminal <code>vscode</code>
